@@ -214,6 +214,7 @@ export default function PokemonCard(props) {
                                             .limit(1)
                                             .get()
                                             .then(snapshot => {
+                                                setClicked(false);
                                                 if (snapshot.docs) {
                                                     const doc =
                                                         snapshot.docs[0];
