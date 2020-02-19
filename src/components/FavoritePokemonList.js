@@ -9,6 +9,7 @@ function FavoritePokemonList({ user }) {
 
     useEffect(() => {
         if (user.email) {
+            setFetching(true);
             firebase
                 .firestore()
                 .collection("pokepedia")
@@ -17,13 +18,12 @@ function FavoritePokemonList({ user }) {
                 .get()
                 .then(snapshot => {
                     if (snapshot.docs.length > 0) {
-                        setFetching(true);
                         const doc = snapshot.docs[0];
                         if (doc.data().pokemons.length > 0) {
                             setPokemons(doc.data().pokemons);
+                        } else {
+                            setFetching(false);
                         }
-                    } else {
-                        return;
                     }
                 });
         }
