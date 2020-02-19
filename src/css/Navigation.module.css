@@ -1,0 +1,87 @@
+@media (min-width: 700px) {
+    a {
+        color: #0060b6;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #00a0c6;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header .logo {
+        width: 32px;
+        height: 32px;
+        align-self: center;
+        margin-bottom: 2px;
+    }
+
+    .navList {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navList li {
+        align-self: center;
+        margin-right: 15px;
+        color: inherit;
+    }
+
+    .navList button {
+        margin: 10px 20px;
+    }
+
+    span {
+        display: flex;
+    }
+}
+
+@media (max-width: 699px) {
+    a {
+        color: #0060b6;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #00a0c6;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header .logo {
+        width: 32px;
+        height: 32px;
+        align-self: center;
+        margin-bottom: 2px;
+    }
+
+    .navList {
+        list-style-type: none;
+        display: flex;
+    }
+
+    .navList li {
+        font-size: 14px;
+        align-self: center;
+        margin-right: 3px;
+        color: inherit;
+    }
+
+    .navList button {
+        margin: 5px 10px;
+    }
+
+    span {
+        display: flex;
+    }
+}
