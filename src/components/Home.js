@@ -40,7 +40,7 @@ function Home() {
                         great right??
                     </p>
                 </div>
-                <img src="/pokemon.svg" alt="" id={styles.landingImg} />
+                <img src="/pokemon.svg" alt="" style={{maxWidth: 300}} />
             </section>
 
             <Container style={{ marginTop: "55px" }} maxWidth="lg">
