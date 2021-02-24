@@ -20,9 +20,9 @@ function Home() {
             let temp = pokemons;
             response.data.results.forEach(pokemon => {
                 temp.push(pokemon);
-            });
+            }); 
             setPokemons(temp);
-            setOffset(offset + 16);
+            setOffset(offset + 24);
         } else {
             setNext(false);
         }
