@@ -1,8 +1,7 @@
 import * as firebase from "firebase";
 import "firebase/firestore";
 import "firebase/auth";
-import config from "../../config";
-const firebaseConfig = config.API_KEY;
+import {API_KEY} from '../../config'
 // Initialize Firebase
 
-export default firebase.initializeApp(firebaseConfig);
+export default firebase.initializeApp(API_KEY);

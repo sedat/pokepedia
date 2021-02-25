@@ -21,11 +21,10 @@ function FavoritePokemonList({ user }) {
                         const doc = snapshot.docs[0];
                         if (doc.data().pokemons.length > 0) {
                             setPokemons(doc.data().pokemons);
-                        } else {
-                            setFetching(false);
                         }
                     }
                 });
+            setFetching(false)
         }
     }, [setFetching, user]);
 
