@@ -7,7 +7,7 @@
   }
   .landingLeft {
     margin-left: 10px;
-    flex: 0 1 100%;
+    flex: 0 1 50%;
     line-height: 2.5rem;
   }
   .landingLeft h1 {
@@ -17,7 +17,7 @@
     font-size: 1rem;
   }
   #landingImg {
-    flex: 0 0 35%;
+    flex: 0 0 50%;
   }
 }
 
